@@ -1,8 +1,8 @@
-package APITesting;
+package APITesting.CRUD;
 
 import io.restassured.RestAssured;
 
-public class SimpleAPI {
+public class BDDStyle {
     public static void main(String[] args) {
         //URL: https://api.zippopotam.us/IN/560037
         //Base URL: https://api.zippopotam.us
