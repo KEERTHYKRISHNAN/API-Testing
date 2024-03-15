@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/keert/IdeaProjects/APIAutomationRestAssured">
         <classes>
-            <class name="APITesting.POST.NonBDD">
+            <class name="APITesting.CRUD.POST.NonBDD">
 
             </class>
         </classes>

@@ -1,4 +1,4 @@
-package APITesting.POST;
+package APITesting.CRUD.POST;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
