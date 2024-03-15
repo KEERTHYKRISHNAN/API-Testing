@@ -3,11 +3,8 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/keert/IdeaProjects/APIAutomationRestAssured">
         <classes>
-            <class name="APITesting.CRUD.GET.GetRequest">
-                <methods>
-                    <include name="getallbookings_Negative"/>
-                    <include name="getallbookings_Positive"/>
-                </methods>
+            <class name="APITesting.POST.NonBDD">
+
             </class>
         </classes>
     </test>

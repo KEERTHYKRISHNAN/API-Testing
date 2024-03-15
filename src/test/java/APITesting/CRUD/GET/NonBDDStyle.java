@@ -1,4 +1,4 @@
-package APITesting.CRUD;
+package APITesting.CRUD.GET;
 
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
