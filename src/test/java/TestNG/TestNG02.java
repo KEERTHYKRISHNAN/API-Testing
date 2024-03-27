@@ -36,7 +36,7 @@ public class TestNG02 {
         r.contentType(ContentType.JSON);
         r.body(payload).log().all();
 
-        Response response = r.put();
+        Response response = r.post();
 
       validatableResponse = response.then().log().all();
 
@@ -46,7 +46,7 @@ public class TestNG02 {
 
 
        token = response.then().log().all().extract().path("token");
-        System.out.println(token);
+
 
         //TestNG Assertion
 //          Assert.assertNotNull(token);
@@ -54,7 +54,7 @@ public class TestNG02 {
 
         //AssertJ
         assertThat(token).isNotNull().isNotBlank().isNotEmpty();
-
+        System.out.println(token);
     }
 
     @Test
@@ -70,11 +70,11 @@ public class TestNG02 {
                 "    },\n" +
                 "    \"additionalneeds\" : \"Need dinner\"\n" +
                 "}";
-        String token = "9146f735be14502";
+
 
         RequestSpecification r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("/booking/1271");
+        r.basePath("/booking/2373");
         r.contentType(ContentType.JSON);
         r.cookie("token",token);
         r.body(jsonString).log().all();

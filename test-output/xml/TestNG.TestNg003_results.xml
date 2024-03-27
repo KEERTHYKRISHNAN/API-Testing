@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.760">
+           time="3.021">
     <properties></properties>
 
 
 
             <testcase
-                name="nonbddstyle_putrequest"
-                time="0.760"
-                classname="TestNG.TestNG02">
+                name="gettoken"
+                time="3.021"
+                classname="TestNG.TestNg003">
             </testcase>
 </testsuite>
