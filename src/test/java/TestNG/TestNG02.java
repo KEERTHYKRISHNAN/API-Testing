@@ -74,7 +74,7 @@ public class TestNG02 {
 
         RequestSpecification r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("/booking/2373");
+        r.basePath("/booking/829");
         r.contentType(ContentType.JSON);
         r.cookie("token",token);
         r.body(jsonString).log().all();

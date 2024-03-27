@@ -6,10 +6,9 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.Matchers;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestNg003 {
+public class TestNg03 {
     //Create Token Request Separate
     RequestSpecification r;
     ValidatableResponse validatableResponse;

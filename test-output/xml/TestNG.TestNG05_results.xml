@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.588">
+           time="2.480">
     <properties></properties>
 
 
 
             <testcase
-                name="nonbddstyle_putrequest"
-                time="0.588"
-                classname="TestNG.TestNG02">
+                name="getsinglebookingID"
+                time="2.480"
+                classname="TestNG.TestNG05">
             </testcase>
 </testsuite>
