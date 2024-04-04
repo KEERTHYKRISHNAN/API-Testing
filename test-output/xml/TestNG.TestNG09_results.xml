@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C:/Users/keert/IdeaProjects/APIAutomationRestAssured"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.007">
+    <properties></properties>
+
+
+
+            <testcase
+                name="REGRUN"
+                time="0.007"
+                classname="TestNG.TestNGExamples.TestNG09">
+            </testcase>
+            <testcase
+                name="e2e"
+                time="0.000"
+                classname="TestNG.TestNGExamples.TestNG09">
+            </testcase>
+</testsuite>

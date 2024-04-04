@@ -12,6 +12,6 @@
             <testcase
                 name="nonbddstyle_putrequest"
                 time="0.588"
-                classname="TestNG.TestNG02">
+                classname="TestNG.RestfulBooker.TestNG02">
             </testcase>
 </testsuite>

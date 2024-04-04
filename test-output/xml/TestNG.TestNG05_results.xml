@@ -12,6 +12,6 @@
             <testcase
                 name="getsinglebookingID"
                 time="2.480"
-                classname="TestNG.TestNG05">
+                classname="TestNG.RestfulBooker.TestNG05">
             </testcase>
 </testsuite>

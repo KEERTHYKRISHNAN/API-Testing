@@ -1,4 +1,4 @@
-package TestNG;
+package TestNG.RestfulBooker;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -18,37 +18,38 @@ public class TestNG07 {
             "    \"firstname\" : \"Vijay\",\n" +
             "    \"lastname\" : \"SAmpath\"\n" +
             "}";
-    String token = "abc123";
+    String token;
 
 
-//    @BeforeTest
-//    public void gettoken() {
-//        r = RestAssured.given();
-//        String jsonString  = "{\n" +
-//                "    \"username\" : \"admin\",\n" +
-//                "    \"password\" : \"password123\"\n" +
-//                "}";
-//
-//
-//        r.baseUri("https://restful-booker.herokuapp.com");
-//        r.basePath("auth");
-//        r.contentType(ContentType.JSON);
-//        r.body(payload).log().all();
-//
-//        Response response = r.post();
-//
-//        validatableResponse = response.then().log().all();
-//
-//        //REst Assured Matchers
-//        validatableResponse.statusCode(200);
-//        validatableResponse.body("token", Matchers.notNullValue());
-//        //String responsestring = response.asString();
-//        //System.out.println(responsestring);
-//
-//
-//        token = response.then().log().all().extract().path("token");
-//        System.out.println(token);
-//    }
+   @BeforeTest
+
+    public void Token(){
+
+        r = RestAssured.given();
+       String jsonString  = "{\n" +
+                "    \"username\" : \"admin\",\n" +
+                "    \"password\" : \"password123\"\n" +
+                "}";
+
+
+        r.basePath("auth");
+        r.contentType(ContentType.JSON);
+        r.body(payload).log().all();
+
+       Response response = r.post();
+
+        validatableResponse = response.then().log().all();
+
+        //REst Assured Matchers
+        validatableResponse.statusCode(200);
+        validatableResponse.body("token", Matchers.notNullValue());
+        //String responsestring = response.asString();
+        //System.out.println(responsestring);
+
+
+        token = response.then().log().all().extract().path("token");
+        System.out.println(token);
+    }
         @Test
         public void partialupdate () {
 
@@ -58,7 +59,7 @@ public class TestNG07 {
             r.body(payload);
             r.contentType(ContentType.JSON);
             r.cookie(token);
-            r.auth().none();
+            r.auth().basic("admin","password123");
 
           Response responseasstring = r.when().patch();
 

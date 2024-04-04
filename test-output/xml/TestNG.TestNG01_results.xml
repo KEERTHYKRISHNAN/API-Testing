@@ -12,6 +12,6 @@
             <testcase
                 name="demo1"
                 time="0.002"
-                classname="TestNG.TestNG01">
+                classname="TestNG.TestNGExamples.TestNG01">
             </testcase>
 </testsuite>

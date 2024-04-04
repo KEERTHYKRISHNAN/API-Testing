@@ -1,4 +1,4 @@
-package TestNG;
+package TestNG.RestfulBooker;
 
 import groovyjarjarantlr4.runtime.Token;
 import io.restassured.RestAssured;

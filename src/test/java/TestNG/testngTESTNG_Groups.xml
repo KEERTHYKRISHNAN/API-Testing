@@ -2,8 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/keert/IdeaProjects/APIAutomationRestAssured">
+        <groups>
+            <run>
+                <include name="Regrun"></include>
+            </run>
+        </groups>
+
+
         <classes>
-            <class name="TestNG.RestfulBooker.TestNG10">
+            <class name="TestNG.TestNGExamples.TestNG09">
 
             </class>
         </classes>

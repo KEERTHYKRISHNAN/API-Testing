@@ -12,6 +12,6 @@
             <testcase
                 name="CreateBooking"
                 time="2.804"
-                classname="TestNG.TestNG06">
+                classname="TestNG.RestfulBooker.TestNG06">
             </testcase>
 </testsuite>
